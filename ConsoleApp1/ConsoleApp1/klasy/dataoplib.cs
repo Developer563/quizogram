@@ -6,13 +6,44 @@ using System.Threading.Tasks;
 using System.IO;
 
 namespace ConsoleApp1.klasy
-{
+{   
+    internal class ExpDataoplib 
+    { 
+    
+    public void odczytlinie (string path,string print)
+        {
+            
+           string[] zaw = File.ReadAllLines(path);
+
+           string testc = zaw[2];
+           
+           if (print == "1") 
+            {
+                Console.WriteLine(testc);
+            
+            
+            
+            }
+            
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
     internal class Dataoplib
     {
 
         public string Odczyt(string path)
         {
-            
+
 
             string zaw = File.ReadAllText(path);
 
@@ -20,10 +51,26 @@ namespace ConsoleApp1.klasy
             return zaw;
         }
 
+        public string Odczytlinie(string Path, int linia) 
+        {
+// odczytywanie z pojedynczej lini
 
 
 
+            return "nic";
+        
+        
+        }
+        
 
+        public bool Zapis(string path)
+        {
+            
+
+            return false;
+        }
+
+        
 
 
 

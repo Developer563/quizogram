@@ -18,7 +18,7 @@ namespace ConsoleApp1
 
             Console.ReadKey();
 
-            
+            Dataoplib testob = Dataoplib;
 
         }
     }
