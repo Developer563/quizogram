@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.klasy
 {
-    internal class dataoplib
+    internal class Dataoplib
     {
+
+        public string Odczyt()
+        {
+            string nic = "nic";
+
+
+            return nic;
+        }
+
+
+
+
+
+
+
+
+
     }
 }

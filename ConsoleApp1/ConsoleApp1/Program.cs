@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp1.klasy;
+using System.Data;
 namespace ConsoleApp1
 {
     internal class Program
@@ -16,7 +17,7 @@ namespace ConsoleApp1
 
             Console.ReadKey();
 
-
+            
 
         }
     }
