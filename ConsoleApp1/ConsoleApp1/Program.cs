@@ -14,11 +14,21 @@ namespace ConsoleApp1
         {
             string version = "indev";
 
-            Console.WriteLine($"version:{version}");
+            string phaze = "alpha";
+
+            
+
+            Console.WriteLine("witaj w programie do robienia quizów");
+
+            Console.WriteLine($"version:{phaze}-{version}");
+
+            Console.WriteLine("");
+
+            Quizy fun = new Quizy();
+
+            fun.load();
 
             Console.ReadKey();
-
-            Dataoplib testob = Dataoplib;
 
         }
     }

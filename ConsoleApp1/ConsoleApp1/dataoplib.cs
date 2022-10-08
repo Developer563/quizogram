@@ -17,11 +17,13 @@ namespace ConsoleApp1.klasy
 
            string testc = zaw[2];
            
-           Console.WriteLine(testc);
-
+           if (print == "1") 
+            {
+                Console.WriteLine(testc);
             
             
             
+            }
             
         }
     
@@ -51,11 +53,11 @@ namespace ConsoleApp1.klasy
 
         public string Odczytlinie(string Path, int linia) 
         {
-            // odczytywanie z pojedynczej lini
-            string line = File.ReadAllLines(Path)[linia];
+// odczytywanie z pojedynczej lini
 
 
-            return "line";
+
+            return "nic";
         
         
         }
