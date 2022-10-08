@@ -22,14 +22,47 @@ namespace ConsoleApp1
 
             Console.WriteLine($"version:{phaze}-{version}");
 
-            Console.WriteLine("");
+            Program obj = new Program();
 
-            Quizy fun = new Quizy();
-
-            fun.load();
-
-            Console.ReadKey();
+            obj.menu(0);
 
         }
+
+
+        public void menu(int arg)
+        {
+
+            if(arg == 0)
+            {
+
+                Quizy fun = new Quizy();
+
+                fun.load();
+
+                Console.ReadKey();
+
+
+
+
+            }
+            else
+            {
+
+
+
+
+            }
+            
+
+
+        }
+
+
+
+
+
     }
+
+
+     
 }
