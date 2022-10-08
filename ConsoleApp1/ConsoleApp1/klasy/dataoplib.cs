@@ -10,12 +10,14 @@ namespace ConsoleApp1.klasy
     internal class Dataoplib
     {
 
-        public string Odczyt()
+        public string Odczyt(string path)
         {
-            string nic = "nic";
+            
+
+            string zaw = File.ReadAllText(path);
 
 
-            return nic;
+            return zaw;
         }
 
 
