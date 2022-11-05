@@ -19,7 +19,7 @@ namespace ConsoleApp1.loader
             zawartos = zawartosc3;
 
             loadpytanie(3);
-            Console.WriteLine("test49");
+            
         }
 
         public string litery = "abcdefghijklmnoprs";
@@ -28,7 +28,7 @@ namespace ConsoleApp1.loader
         public void start()
         {
 
-            
+             
 
         }
 
@@ -52,19 +52,21 @@ namespace ConsoleApp1.loader
 
                 int i = 0;
 
+                Console.WriteLine(pytanie);
+
                 while (i != liczbaodp)
                 {
 
-
+                    
                     string test2 = zawartos[position + 4 + i];
 
-                    Console.WriteLine(test2);
+                    Console.WriteLine($"{i + 1} - {test2}");
 
 
                     i = i + 1;
                 }
 
-                
+                Console.ReadLine();
 
             }
             else
