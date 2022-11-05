@@ -28,11 +28,27 @@ namespace ConsoleApp1.loader
         public void start()
         {
 
-
+            loadpytanie(4);
 
         }
 
+        public void loadpytanie(int position)
+        {
 
+            string pytanie = null;
+
+            if (zawartos[position] == "begin-quiz-question")
+            {
+
+                pytanie = zawartos[position + 1];
+
+                string liczbodp = 
+
+                prawidlodp = 
+                
+            }
+            
+        }
     
     
 

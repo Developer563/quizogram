@@ -21,7 +21,7 @@ namespace ConsoleApp1.klasy
         public void startload()
         {
 
-            
+            ;
             
 
             Console.WriteLine("podaj nazwe pliku quizu w folderze quizy");
@@ -29,7 +29,7 @@ namespace ConsoleApp1.klasy
             string nazwa = "quizy/" + Console.ReadLine();
 
             string[] zawartosc = File.ReadAllLines(nazwa);
-            
+            zawart = zawartosc;
 
             int lenght = zawartosc.Length;
 
@@ -65,7 +65,23 @@ namespace ConsoleApp1.klasy
         public void loadversion(string[] wartosc2)
         {
 
+            if (zawart[1] == "loaderversion")
+            {
 
+                if (zawart[2] == "1.0")
+                {
+
+
+
+                }
+
+
+
+
+
+
+
+            }
 
         }
 
