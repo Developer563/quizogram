@@ -9,6 +9,10 @@ namespace ConsoleApp1.loader
     internal class loader1e0
     {
 
+
+
+        public int allpytan = 0;
+
         public string[] zawartos = null;
 
         public void StartLoader(string[] zawartosc3)
@@ -20,6 +24,28 @@ namespace ConsoleApp1.loader
 
             loadpytanie(3);
             
+        }
+
+        public void detectquestions()
+        {
+            int v = zawartos.Length;
+            int j = 0;
+            while (j != v)
+            {
+
+                if (zawartos[j] == "begin-quiz-question")
+                {
+
+
+
+                }
+
+                
+
+
+            }
+
+
         }
 
         public string litery = "abcdefghijklmnoprs";
@@ -67,6 +93,8 @@ namespace ConsoleApp1.loader
                 }
 
                 Console.ReadLine();
+
+                
 
             }
             else
