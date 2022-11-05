@@ -74,6 +74,11 @@ namespace ConsoleApp1.klasy
                     Console.WriteLine("wersja loadera to alpha1.0");
 
                     Console.ReadKey();
+
+                    loader1e0 load = new loader1e0();
+
+                    load.StartLoader(zawart);
+
                 }
 
 

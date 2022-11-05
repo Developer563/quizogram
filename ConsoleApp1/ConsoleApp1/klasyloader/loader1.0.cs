@@ -18,8 +18,8 @@ namespace ConsoleApp1.loader
 
             zawartos = zawartosc3;
 
-            start();
-
+            loadpytanie(3);
+            Console.WriteLine("test49");
         }
 
         public string litery = "abcdefghijklmnoprs";
@@ -28,13 +28,13 @@ namespace ConsoleApp1.loader
         public void start()
         {
 
-            loadpytanie(4);
+            
 
         }
 
         public void loadpytanie(int position)
         {
-
+            
             string pytanie = null;
 
             if (zawartos[position] == "begin-quiz-question")
@@ -44,24 +44,31 @@ namespace ConsoleApp1.loader
 
                 string strliczbodp = zawartos[position + 2];
 
-                int liczbaodp = (Convert.ToInt16(strliczbodp) - 48);
+                int liczbaodp = (Convert.ToInt16(strliczbodp));
 
                 string strprawidlodp = zawartos[position + 3];
 
-                int prawidodp = (Convert.ToInt16(strprawidlodp) - 48);
+                int prawidodp = (Convert.ToInt16(strprawidlodp));
 
                 int i = 0;
 
-                while ((i + 1) != liczbaodp) ;
+                while (i != liczbaodp)
                 {
 
-                    Console.WriteLine(zawartos[ position + 4 + i ]);
+
+                    string test2 = zawartos[position + 4 + i];
+
+                    Console.WriteLine(test2);
 
 
                     i = i + 1;
                 }
 
+                
+
             }
+            else
+            { Console.WriteLine("błąd wczytywania pytania"); }
             
         }
     
