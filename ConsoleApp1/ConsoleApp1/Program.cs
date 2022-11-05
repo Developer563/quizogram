@@ -16,11 +16,21 @@ namespace ConsoleApp1
 
             string phaze = "alpha";
 
-            
+            string latestloader = "alpha1.0-indev";
 
             Console.WriteLine("witaj w programie do robienia quizów");
 
             Console.WriteLine($"version:{phaze}-{version}");
+
+            Console.WriteLine($"latest loader version:{latestloader}");
+
+            if (phaze == "alpha" || phaze == "beta")
+            {
+                
+                Console.WriteLine($"Uwaga program jest w fazie {phaze} może zawierać wiele błędów");
+
+            }
+
 
             Program obj = new Program();
 
@@ -37,7 +47,7 @@ namespace ConsoleApp1
 
                 Quizy fun = new Quizy();
 
-                fun.load();
+                fun.startload();
 
                 Console.ReadKey();
 

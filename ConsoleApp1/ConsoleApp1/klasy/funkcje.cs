@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleApp1.klasy;
+using ConsoleApp1.loader;
 using System.IO;
+
 namespace ConsoleApp1.klasy
 {
     internal class funkcje
@@ -15,21 +16,24 @@ namespace ConsoleApp1.klasy
     internal class Quizy
     {
 
-        public void load()
+        
+        private string[] zawart = null;
+        public void startload()
         {
 
-
-            ;
+            
+            
 
             Console.WriteLine("podaj nazwe pliku quizu w folderze quizy");
 
             string nazwa = "quizy/" + Console.ReadLine();
 
             string[] zawartosc = File.ReadAllLines(nazwa);
+            
 
             int lenght = zawartosc.Length;
 
-            Console.WriteLine(lenght);
+            
 
             Console.ReadKey();
 
@@ -38,8 +42,8 @@ namespace ConsoleApp1.klasy
 
                 Console.WriteLine("poprawnie wczytano plik");
 
-                loaderchose(zawartosc);
 
+                loadversion(zawartosc);
 
 
             }
@@ -49,43 +53,28 @@ namespace ConsoleApp1.klasy
 
             }
 
+            
+            
+
+
+
         }
 
 
-        private void loaderchose(string[] zaw)
+        
+        public void loadversion(string[] wartosc2)
         {
 
-            if(zaw[2] == "alpha1.0")
-            {
-
-                loaderalpha1e0(zaw);
 
 
-
-
-            }
-
+        }
 
             
 
 
-        }
+        
 
-        public void loaderalpha1e0(string[] zawartosc)
-        {
-
-            int len = zawartosc.Length;
-            int i = 2;
-            bool Stop = false;
-            while(i != len || Stop == true)
-            {
-
-                
-                    
-
-            }
-
-        }
+     
 
     }   
 

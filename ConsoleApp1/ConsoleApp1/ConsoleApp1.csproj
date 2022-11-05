@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="klasy\dataoplib.cs" />
     <Compile Include="klasy\funkcje.cs" />
+    <Compile Include="klasyloader\loader1.0.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
