@@ -42,10 +42,25 @@ namespace ConsoleApp1.loader
 
                 pytanie = zawartos[position + 1];
 
-                string liczbodp = 
+                string strliczbodp = zawartos[position + 2];
 
-                prawidlodp = 
-                
+                int liczbaodp = (Convert.ToInt16(strliczbodp) - 48);
+
+                string strprawidlodp = zawartos[position + 3];
+
+                int prawidodp = (Convert.ToInt16(strprawidlodp) - 48);
+
+                int i = 0;
+
+                while ((i + 1) != liczbaodp) ;
+                {
+
+                    Console.WriteLine(zawartos[ position + 4 + i ]);
+
+
+                    i = i + 1;
+                }
+
             }
             
         }

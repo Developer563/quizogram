@@ -21,7 +21,7 @@ namespace ConsoleApp1.klasy
         public void startload()
         {
 
-            ;
+            
             
 
             Console.WriteLine("podaj nazwe pliku quizu w folderze quizy");
@@ -35,7 +35,7 @@ namespace ConsoleApp1.klasy
 
             
 
-            Console.ReadKey();
+            
 
             if (zawartosc[0] == "begin-quiz-file")
             {
@@ -68,11 +68,12 @@ namespace ConsoleApp1.klasy
             if (zawart[1] == "loaderversion")
             {
 
-                if (zawart[2] == "1.0")
+                if (zawart[2] == "alpha1.0")
                 {
 
+                    Console.WriteLine("wersja loadera to alpha1.0");
 
-
+                    Console.ReadKey();
                 }
 
 
@@ -82,7 +83,12 @@ namespace ConsoleApp1.klasy
 
 
             }
+            else
+            {
 
+                Console.WriteLine($"błąd wczytywania wersji {zawart[1]}");
+
+            }
         }
 
             
