@@ -1,0 +1,13 @@
+begin-quiz-file
+begin-quiz-question
+testowe pytanie
+begin-good-answer
+2
+type-quest-answer
+odpowiedz1
+type-quset-answer
+odpowiedz2
+type-quset-answer
+odpowiedz3
+end-quiz-question
+end-quiz-file

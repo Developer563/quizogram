@@ -86,6 +86,8 @@ namespace ConsoleApp1.loader
 
                 int prawidodp = (Convert.ToInt16(strprawidlodp));
 
+                int nextposition = position + 3 + liczbaodp + 1;
+
                 int i = 0;
 
                 Console.WriteLine(pytanie);
@@ -111,7 +113,7 @@ namespace ConsoleApp1.loader
                 if (intdop == prawidodp)
                 {
 
-                    lprawidadp = liczbaodp + 1;
+                    lprawidadp = lprawidadp + 1;
 
                     Console.WriteLine("poprawna odpowiedź");
 
@@ -124,7 +126,32 @@ namespace ConsoleApp1.loader
 
                 }
 
+                
 
+                if (nextposition < zawartos.Length)
+                { 
+                        
+                    if (zawartos[nextposition] == "begin-quiz-question")
+                    {      
+
+
+                        
+                    loadpytanie(nextposition); 
+                    
+                    }
+                    else
+                    {
+
+
+
+                    }
+                    
+                    
+                }
+
+                
+
+                
 
 
 
@@ -135,7 +162,11 @@ namespace ConsoleApp1.loader
             }
             else
             { Console.WriteLine("błąd wczytywania pytania"); }
+
+            Console.WriteLine($"Odpowiedziano prawidłowo na {lprawidadp}/{allpytan}");
             
+
+
         }
     
     

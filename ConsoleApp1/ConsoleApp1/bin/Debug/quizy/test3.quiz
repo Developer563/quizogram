@@ -1,0 +1,27 @@
+begin-quiz-file
+loaderversion
+alpha1.0
+begin-quiz-question
+testowe pytanie1
+3
+2
+odpowiedz1
+odpowiedz2
+odpowiedz3
+begin-quiz-question
+testowe pytanie2
+5
+2
+odpowiedz1
+odpowiedz2
+odpowiedz3
+odpowiedz4
+odpowiedz5
+begin-quiz-question
+testowe pytanie3
+4
+1
+odpowiedz1
+odpowiedz2
+odpowiedz3
+odpowiedz4
