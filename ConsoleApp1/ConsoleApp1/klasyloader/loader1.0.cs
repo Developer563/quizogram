@@ -24,7 +24,7 @@ namespace ConsoleApp1.loader
 
             zawartos = zawartosc3;
 
-            
+            detectquestions();
 
             loadpytanie(3);
             
@@ -67,7 +67,7 @@ namespace ConsoleApp1.loader
         public void loadpytanie(int position)
         {
 
-            detectquestions();
+            
 
             string pytanie = null;
 
@@ -108,8 +108,21 @@ namespace ConsoleApp1.loader
 
                 int intdop = Convert.ToInt16(odp);
 
+                if (intdop == prawidodp)
+                {
+
+                    lprawidadp = liczbaodp + 1;
+
+                    Console.WriteLine("poprawna odpowiedź");
+
+                }
+                else
+                {
+
+                    Console.WriteLine("niepoprawna odpowiedź");
 
 
+                }
 
 
 
