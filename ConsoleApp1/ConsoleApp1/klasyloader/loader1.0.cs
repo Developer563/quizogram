@@ -142,11 +142,18 @@ namespace ConsoleApp1.loader
                     else
                     {
 
+                    
 
-
+                        Console.ReadKey();
                     }
                     
                     
+                }
+                else
+                {
+
+
+                Console.WriteLine($"Odpowiedziano prawidłowo na {lprawidadp}/{allpytan} odpowiedzi");
                 }
 
                 
@@ -163,7 +170,7 @@ namespace ConsoleApp1.loader
             else
             { Console.WriteLine("błąd wczytywania pytania"); }
 
-            Console.WriteLine($"Odpowiedziano prawidłowo na {lprawidadp}/{allpytan}");
+            
             
 
 
